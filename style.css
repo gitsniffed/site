@@ -1,0 +1,30 @@
+/* Remove default margins/padding and set background color */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #F26D9E;
+    height: 100%;
+  }
+  
+  /* Center the image both vertically and horizontally */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Default styling: use natural image size up to 100% width */
+  .responsive-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* On mobile (<= 768px), enlarge the image to 90% of the viewport width */
+  @media screen and (max-width: 768px) {
+    .responsive-img {
+      width: 90vw;
+    }
+  }
+  
